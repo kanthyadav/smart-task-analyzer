@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Task Analyzer</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Smart Task Analyzer</h1>
+
+    <div>
+        <input type="text" id="title" placeholder="Task title">
+        <input type="number" id="urgency" placeholder="Urgency (0-10)">
+        <input type="number" id="importance" placeholder="Importance (0-10)">
+        <input type="number" id="effort" placeholder="Effort (0-10)">
+        <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <h3>Tasks:</h3>
+    <ul id="taskList"></ul>
+
+    <button onclick="analyze()">Analyze</button>
+
+    <h3>Results:</h3>
+    <pre id="results"></pre>
+
+</body>
+</html>
